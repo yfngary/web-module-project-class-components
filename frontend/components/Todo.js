@@ -1,11 +1,9 @@
 import React from 'react'
 
 export default class Todo extends React.Component {
-  render() {
+  render(props) {
     return (
-      <div>
-        Todo
-      </div>
+        <li>{this.props.todos.name} { this.props.todos.completed?<span>- Completed</span>:<span> </span> }</li>
     )
   }
 }
